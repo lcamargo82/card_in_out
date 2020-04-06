@@ -1,0 +1,137 @@
+html {
+    padding: 2em;
+}
+
+body {
+    background: #ebebeb;
+}
+
+#btns * {
+    transition: all 0.3s ease-in-out;
+}
+
+#btns {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-flow: row wrap;
+}
+
+.btn {
+    padding: 10px 0;
+    width: 24%;
+    font-size: 1em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.btn .btn-top h4::before,
+.btn-inner,
+.btn-inner:hover .btn-botton {
+    background-color: deepskyblue;
+}
+
+.btn .btn-inner {
+    position: relative;
+    min-height: 280px;
+    border: 2px solid #e8dfdf;
+    overflow: hidden;
+}
+
+.btn  .btn-top {
+    width: 100%;
+    padding: 55px 0;
+    position: absolute;
+    top: 0px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn .btn-botton {
+    width: 100%;
+    position: absolute;
+    bottom: -310px;
+    height: 100%;
+    padding: 15px 15px 20px 15px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.btn .btn-top h4 {
+    margin-top: 25px;
+    position: relative;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: deepskyblue;
+}
+
+p {
+    font-family: sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.btn .btn-botton h4 {
+    font-family: sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 15px 0px 17px;
+}
+
+.btn .btn-top h4:before {
+    content: "";
+    margin: -2px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -18px;
+    display: block;
+    height: 2px;
+    width: 40px;
+    background-color: #333;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.7em;
+    border: 2px solid white;
+    padding: 10px 10px;
+    border-radius: 50px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+.btn .fa {
+    font-size: 3.5em;
+    line-height: 1.3em;
+    color: #333;
+}
+
+.btn .btn-botton .fa {
+    font-size: 38px;
+    line-height: 50px;
+}
+
+.btn .btn-botton p {
+    padding: 0px 5px;
+    font-size:  14px;
+    line-height: 1.5em;
+    color: white;
+    font-family: sans-serif;
+}
+
+.btn .btn-inner:hover .btn-botton {
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn .btn-inner:hover .btn-top {
+    top: -200px;
+    transition: all 0.3s ease-in-out;
+}
+
